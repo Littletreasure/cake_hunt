@@ -1,8 +1,11 @@
 <template>
-  <div class="container">
-  <Header />
+  <main class="container">
     <img src="../assets/cake hunt logo.jpg" />
-  </div>
+    <Introduction />
+    <div class="break">
+    </div>
+    <About />
+  </main>
 </template>
 
 <script>
@@ -11,7 +14,7 @@ export default {}
 
 <style lang="scss" scoped>
 .container {
-  background: $colour-pink;
+  background: $colour-pink1;
   margin: 0 auto;
   min-height: 100vh;  
   display: flex;
@@ -21,9 +24,17 @@ export default {}
   
   img {
     width: 40%;
-    border: 1px solid $colour-pink;
+    border: 1px solid $colour-pink1;
   }
 }
 
-
+.break {
+  // background-color: #ff80bf;
+  background-image: url('../assets/cupcakes.jpg');
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  min-height: 100px;
+  width: 100%;
+}
 </style>

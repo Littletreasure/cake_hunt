@@ -15,11 +15,14 @@ export default {
 .header {
   width: 100%;
   height: 60px;
+  position: sticky;
+  top: 0px;
   background: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 
   &__image {
     width: 60px;
